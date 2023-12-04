@@ -1,10 +1,12 @@
 import React from 'react'
 import Sidebar from './_components/Sidebar'
 import Navbar from './_components/Navbar'
+import { Toaster } from 'react-hot-toast'
 
 const Dashboardlayout = ({children}:{children:React.ReactNode}) => {
   return (
     <div className=' h-full '>
+      <Toaster/>
       <div className=" h-[80px] md:pl-56 fixed inset-y-0 w-full z-50">
       <Navbar/>
       </div>
